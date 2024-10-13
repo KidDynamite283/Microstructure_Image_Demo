@@ -34,7 +34,7 @@ if uploaded_file is not None:
 
     if generate:
         # Instantiate the Gemini Pro Vision model
-        model = genai.GenerativeModel('gemini-1.5-pro')
+        model = genai.GenerativeModel('gemini-1.5-flash')
 
         # Create a prompt and pass the image data for description
         response = model.generate_content(
